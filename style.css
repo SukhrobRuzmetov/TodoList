@@ -77,6 +77,8 @@ body {
 }
 
 .app ul li {
+  position: relative;
+  margin-bottom: 3px;
   padding: 10px;
   background-color: #262e4c;
   border-bottom: 1px solid #3a4674;
@@ -89,7 +91,7 @@ body {
   border-radius: 50%;
   background-color: white;
   border: 1px solid rgb(255, 255, 255);
-  -webkit-appearance: none;
+  appearance: none;
 }
 
 .check:checked {
@@ -124,6 +126,15 @@ body {
   color: rgba(192, 192, 192, 0.8);
   text-decoration: line-through;
 }
+
+.date {
+  position:absolute;
+  right: 40px;
+  font-size: 12px;
+  opacity: 0.5;
+  
+}
+
 
 h2 {
   padding-top: 15px;
@@ -226,7 +237,7 @@ h2 {
   transition: 0.4s;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 500px) {
   #facebook,
   #instagram,
   #telegram,
@@ -236,5 +247,9 @@ h2 {
     font-size: 1em;
     padding: 8px 12px;
     margin: 0 5px;
+  }
+
+  .date{
+    display: none;
   }
 }
