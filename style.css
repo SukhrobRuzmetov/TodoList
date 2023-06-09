@@ -67,6 +67,9 @@ body {
 .app form button:hover {
   background: linear-gradient(to right, #ee0979, #ff6a00);
 }
+
+
+
 .app ul {
   list-style: none;
   color: #e0e0e0;
@@ -160,7 +163,7 @@ h2 {
 /* circled nav */
 
 .social {
-  position: absolute;
+  position: fixed;
   bottom: 20px;
   display: flex;
   justify-content: center;
